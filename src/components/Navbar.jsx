@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Menu, X, ShoppingBag, Instagram, Facebook } from 'lucide-react';
 import logo from "../assets/images/logo.jpg";
 import social from "../assets/images/social.jpg"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSideModalOpen, setIsSideModalOpen] = useState(false);
 
   return (
+    
     <div className="w-full fixed top-0 left-0 z-50">
       {/* Top banner */}
       <div className="bg-[#019A28] text-white px-4 py-1.5 text-xs sm:text-sm">
@@ -53,21 +55,25 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6 text-sm">
-              <a href="/about-us" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                ABOUT US
-              </a>
-              <a href="/services" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                SERVICES
-              </a>
-              <a href="/products" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+              <Link to="/" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+                HOME
+              </Link>
+              <Link to="/products" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
                 PRODUCTS
-              </a>
-              <a href="/contact" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+              </Link>
+              <Link to="/services" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+                SERVICES
+              </Link>
+              <Link to="/aboutinnovator" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+                ABOUT US
+              </Link>
+              <Link to="/testimonials" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+                TESTIMONIALS
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
                 CONTACT
-              </a>
-              <a href="/careers" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                CAREERS
-              </a>
+              </Link>
+              
             </nav>
 
             <div className="flex items-center">
@@ -95,21 +101,24 @@ const Navbar = () => {
           {isMenuOpen && (
             <div className="md:hidden mt-2 py-2 border-t border-gray-100">
               <nav className="flex flex-col space-y-1">
-                <a href="/about-us" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                <Link to="/" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                  HOME
+                </Link>
+                <Link to="/about-us" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   ABOUT US
-                </a>
-                <a href="/services" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                </Link>
+                <Link to="/services" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   SERVICES
-                </a>
-                <a href="/products" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                </Link>
+                <Link to="/products" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   PRODUCTS
-                </a>
-                <a href="/contact" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                </Link>
+                <Link to="/contact" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   CONTACT
-                </a>
-                <a href="/careers" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
-                  CAREERS
-                </a>
+                </Link>
+                <Link to="/testimonials" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                  Testimonials
+                </Link>
               </nav>
             </div>
           )}
@@ -158,7 +167,7 @@ const Navbar = () => {
                 <a href="https://www.instagram.com/jnelp_cosmetic_solutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 border border-gray-300 flex items-center justify-center hover:border-[#019A28] transition-colors">
                   <Instagram />
                 </a>
-                <a href="#" className="w-10 h-10 border border-gray-300 flex items-center justify-center hover:border-[#019A28] transition-colors">
+                <a href="https://www.facebook.com/share/14wVBKAjdr/ " className="w-10 h-10 border border-gray-300 flex items-center justify-center hover:border-[#019A28] transition-colors">
                   <Facebook />
                 </a>
               </div>
@@ -168,13 +177,13 @@ const Navbar = () => {
             <div className="text-center">
               <h2 className="text-xl font-medium mb-6">ONLINE STORE</h2>
               <nav className="flex flex-col space-y-4 font-serif">
-                <a href="/soft-soap" className="hover:text-[#019A28] transition-colors">
+                <a href="/services" className="hover:text-[#019A28] transition-colors">
                   Cocoa Black Soap
                 </a>
-                <a href="/shower-gels" className="hover:text-[#019A28] transition-colors">
+                <a href="/services" className="hover:text-[#019A28] transition-colors">
                   Shower Gels
                 </a>
-                <a href="/bar-soap" className="hover:text-[#019A28] transition-colors">
+                <a href="/services" className="hover:text-[#019A28] transition-colors">
                   Body Wash
                 </a>
               </nav>

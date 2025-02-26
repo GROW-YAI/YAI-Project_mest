@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import hero from "../../../assets/images/product3.jpg"
-import hero2 from "../../../assets/images/hero2.jpg"
-import hero3 from "../../../assets/images/hero3.jpg"
+import hero from "../../../assets/images/hero 11.png"
+import hero2 from "../../../assets/images/hero3.jpg"
+import hero3 from "../../../assets/images/hero 1.jpeg"
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -49,7 +50,7 @@ const Hero = () => {
   return (
     <div className="pt-20">
       <div className="relative w-full h-screen flex flex-col lg:flex-row">
-        
+
         <div className="relative w-full lg:w-[60%] h-[50vh] lg:h-full bg-sky-100 overflow-hidden">
           <div
             className="absolute inset-0 transition-transform duration-500 ease-in-out"
@@ -64,7 +65,7 @@ const Hero = () => {
                 <img
                   src={slide.image}
                   alt="Product showcase"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                 />
               </div>
             ))}
@@ -90,9 +91,11 @@ const Hero = () => {
               {slides[currentSlide].description}
             </h1>
 
-            <button className="bg-[#019A28] text-white px-6 py-3 lg:px-8 lg:py-3 rounded-none hover:bg-navy-800 transition-colors">
-              {slides[currentSlide].buttonText}
-            </button>
+            <Link to="/services">
+              <button className="bg-[#019A28] text-white px-6 py-3 lg:px-8 lg:py-3 rounded-none hover:bg-navy-800 transition-colors">
+                {slides[currentSlide].buttonText}
+              </button>
+            </Link>
 
             {/* Navigation dots */}
             <div className="flex items-center justify-center lg:justify-start gap-6 mt-8 lg:mt-16">
@@ -108,14 +111,14 @@ const Hero = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      currentSlide === index
+                    className={`w-2 h-2 rounded-full transition-all ${currentSlide === index
                         ? "bg-navy-900 w-4"
                         : "bg-navy-900/40"
-                    }`}
+                      }`}
                   />
                 ))}
               </div>
+
 
               <button
                 onClick={nextSlide}
@@ -123,6 +126,7 @@ const Hero = () => {
               >
                 <ChevronRight className="w-6 h-6" />
               </button>
+
             </div>
           </div>
         </div>

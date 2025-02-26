@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Carrot, Droplets, Milk } from 'lucide-react'
 import carrot from "../../../assets/images/carrot.jpeg"
@@ -7,6 +8,7 @@ import goatmilk from "../../../assets/images/goatmilk.jpeg"
 import product1 from "../../../assets/images/p1.jpeg"
 import product2 from "../../../assets/images/p2.jpeg"
 import product3 from "../../../assets/images/p3.jpeg"
+import Navbar from '../../../components/Navbar'
 const products = [
   {
     id: 1,
@@ -62,14 +64,23 @@ const cardVariants = {
   }
 }
 
-function AboutProduct() {
+function AboutProducts() {
+  const [isHome, setIsHome] = useState(false);
+  
+    useEffect(() => {
+      setIsHome(window.location.pathname === "/");
+    }, []);
+
   return (
-    <section className="bg-[#308E1B] py-20 px-4 md:px-8">
+   <div>
+    <Navbar/>
+    <section className={`bg-lime-50 py-20 px-4 md:px-8 ${!isHome ? "mt-16" : ""}`}>
+
       <div className="max-w-7xl mx-auto">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
+          className="text-4xl md:text-5xl font-bold text-green-600 text-center mb-16"
         >
           Our Current Products
         </motion.h2>
@@ -128,8 +139,10 @@ function AboutProduct() {
         </motion.div>
       </div>
     </section>
+    
+   </div>
   )
 }
 
-export default AboutProduct
+export default AboutProducts;
 
