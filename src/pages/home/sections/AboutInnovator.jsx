@@ -6,9 +6,9 @@ import Navbar from '../../../components/Navbar';
 
 
 const stats = [
-  { number: "0+", label: "Products Created" },
-  { number: "0+", label: "Natural Ingredients" },
-  { number: "0+", label: "Years of Experience" }
+  { number: "350+", label: "Impacts Made"},
+  { number: "7+", label: "Years of Experience" },
+  { number: "3+", label: "Products Created" }
 ];
 
 const containerVariants = {
@@ -55,7 +55,7 @@ function AboutInnovator() {
             {/* Right Column - Content */}
             <motion.div variants={itemVariants} className="text-white">
               <motion.span variants={itemVariants} className="text-white text-lg font-medium mb-4 block">
-                About Me
+                About Founder
               </motion.span>
 
               <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-bold mb-6">
@@ -63,10 +63,7 @@ function AboutInnovator() {
               </motion.h2>
 
               <motion.p variants={itemVariants} className="text-gray-200 text-lg mb-8 leading-relaxed">
-                As a young entrepreneur from Cape Coast, I've dedicated my career to revolutionizing
-                skincare through natural, locally-sourced ingredients. My journey began with a
-                personal struggle to find safe and effective skincare solutions, which led me to
-                develop innovative products that celebrate our natural beauty.
+              My journey began with a personal search for safe and effective skincare, leading me to create natural, locally sourced products that promote sustainability and social impact. Beyond skincare, my work creates jobs, supports families, and equips women and youth with valuable skills. Through arts and crafts, we repurpose waste to inspire creativity and provide sustainable income opportunities. My mission is to blend beauty, sustainability, and empowerment for lasting change.
               </motion.p>
 
               {/* Statistics Grid */}
@@ -86,7 +83,7 @@ function AboutInnovator() {
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center space-x-3 text-white px-6 py-3 font-medium transition-colors"
               >
-                <h1>Join me in my journey, to revolutionize the skincare industry, one natural ingredient at a time</h1>
+                <h1>Join me in revolutionizing skincare with natural ingredients while upholding sustainability and social responsibility at the heart of our brand.</h1>
               </motion.div>
             </motion.div>
           </motion.div>

@@ -104,7 +104,7 @@ const Navbar = () => {
                 <Link to="/" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   HOME
                 </Link>
-                <Link to="/about-us" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                <Link to="/aboutinnovator" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
                   ABOUT US
                 </Link>
                 <Link to="/services" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
@@ -117,7 +117,7 @@ const Navbar = () => {
                   CONTACT
                 </Link>
                 <Link to="/testimonials" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
-                  Testimonials
+                  TESTIMONIALS
                 </Link>
               </nav>
             </div>

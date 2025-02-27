@@ -27,23 +27,23 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className={`flex flex-col justify-center items-center h-[100vh] bg-lime-50 ${!isHome ? "mt-16 md:mt-20" : ""}`}> 
+      <div className={`flex flex-col justify-center items-center min-h-screen bg-lime-50 px-4 ${!isHome ? "mt-16 md:mt-20" : ""}`}> 
         <motion.form 
           action="https://formspree.io/f/xldeezyn" 
           method="POST" 
-          className="flex flex-col bg-green-600 gap-8 mt-2 mb-2 p-8 w-100 rounded"
+          className="flex flex-col bg-green-600 gap-6 p-8 w-full max-w-md rounded"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={containerVariants}
         >
-          <motion.h4 variants={itemVariants} className="text-4xl text-lime-50 font-bold text-center">
+          <motion.h4 variants={itemVariants} className="text-3xl sm:text-4xl text-lime-50 font-bold text-center">
             Contact Us
           </motion.h4>
 
           <motion.input 
             variants={itemVariants} 
-            className="bg-white p-2"  
+            className="bg-white p-3 rounded text-gray-800"  
             type="text" 
             name="Fullname" 
             placeholder="Fullname"
@@ -51,7 +51,7 @@ const Contact = () => {
 
           <motion.input 
             variants={itemVariants} 
-            className="bg-white p-2" 
+            className="bg-white p-3 rounded text-gray-800" 
             type="email" 
             name="Email" 
             placeholder="Email"
@@ -59,10 +59,11 @@ const Contact = () => {
 
           <motion.textarea 
             variants={itemVariants} 
-            className="bg-white p-2" 
+            className="bg-white p-3 rounded text-gray-800" 
             name="message" 
             id="message" 
             placeholder="Please enter your request"
+            rows="4"
           />
 
           <motion.button 
@@ -70,7 +71,7 @@ const Contact = () => {
             variants={itemVariants} 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="border-2 p-2 border-white text-lime-50 justify-center"
+            className="bg-white text-green-600 font-bold py-3 px-6 rounded hover:bg-gray-200 transition"
           >
             Submit
           </motion.button>

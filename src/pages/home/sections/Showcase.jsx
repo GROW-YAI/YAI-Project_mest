@@ -19,9 +19,8 @@ const products = [
   { id: 5, name: "Scented Carrot Gel with Lavender", price: "₵60", image: image5, description: "Calming lavender and carrot extract nourish and refresh your skin." },
   { id: 6, name: "Scented Carrot Black Soap", price: "₵60", image: image6, description: "A luxurious blend of carrot and natural oils for soft, radiant skin." },
   { id: 7, name: "Alata Shower Gel", price: "₵60", image: image7, description: "A rich, foaming cleanser that hydrates and revitalizes your skin." },
-  { id: 8, name: "Liquid Soap", price: "₵60", image: image8, description: "A gentle, everyday cleanser that leaves skin feeling fresh and smooth." },
-  { id: 9, name: "Liquid Soap", price: "₵60", image: image9, description: "Infused with botanical extracts for a refreshing and balanced cleanse." }
-
+  { id: 8, name: "Liquid Soap", price: "₵60", image: image8, description: "A powerful yet gentle liquid soap designed to effectively remove dirt, grease, and stains while being safe for hands and surfaces." },
+  { id: 9, name: "Scented floor cleaner", price: "₵60", image: image9, description: "Enriched with antibacterial properties, it ensures a deep clean while leaving a fresh, long-lasting scent. Perfect for household, office, and industrial use." }
 ];
 
 const Showcase = () => {
@@ -41,7 +40,7 @@ const Showcase = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-8 text-green-600"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-green-600"
         >
           What Do You Need?
         </motion.h2>
@@ -57,15 +56,15 @@ const Showcase = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="bg-white p-4 rounded-lg shadow-md"
+              className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center text-center"
             >
               <div className="w-full h-56 flex justify-center items-center bg-lime-50 rounded-md">
                 <img src={product.image} alt={product.name} className="w-full h-full object-contain rounded-md" />
               </div>
-              <h3 className="text-xl font-semibold mt-4">{product.name}</h3>
-              <p className="text-gray-600">{product.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mt-4">{product.name}</h3>
+              <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>
               <p className="text-lg font-bold text-green-600">{product.price}</p>
-              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">
+              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full sm:w-auto">
                 Add to cart
               </button>
             </motion.div>
@@ -78,7 +77,7 @@ const Showcase = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setShowAll(!showAll)}
-            className="bg-green-700 text-white py-2 px-6 rounded hover:bg-green-800 transition"
+            className="bg-green-700 text-white py-2 px-6 rounded hover:bg-green-800 transition w-full sm:w-auto"
           >
             {showAll ? "View Less" : "View More"}
           </motion.button>
