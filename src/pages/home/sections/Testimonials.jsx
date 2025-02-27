@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteLeft } from "react-icons/fa";
 import pics from "../../../assets/images/testi 4.jpg";
@@ -39,6 +39,13 @@ const itemVariants = {
 };
 
 const Testimonials = () => {
+  const [isHome, setIsHome] = useState(false); 
+
+  
+  useEffect(() => {
+    setIsHome(window.location.pathname === "/");
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -47,7 +54,7 @@ const Testimonials = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
-        className="relative bg-green-600 text-white py-16 px-6 md:px-20 pt-24 h-[100vh] mt-20"
+        className={`relative bg-green-600 text-white py-16 px-6 md:px-20 pt-24 h-[100vh] ${!isHome ? "mt-16 md:mt-20" : ""}`} 
       >
         {/* Quote Icon */}
         <motion.div

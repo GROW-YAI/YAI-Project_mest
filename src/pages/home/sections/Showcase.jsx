@@ -1,15 +1,90 @@
-import { div } from "framer-motion/client";
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react"; 
 import Navbar from "../../../components/Navbar";
+import image1 from "../../../assets/images/p1.jpeg";
+import image2 from "../../../assets/images/p2.jpeg";
+import image3 from "../../../assets/images/p3.jpeg";
+import image4 from "../../../assets/images/buy 9.jpg";
+import image5 from "../../../assets/images/buy 3.jpg";
+import image6 from "../../../assets/images/buy 1.jpg";
+import image7 from "../../../assets/images/buy 6.jpg";
+import image8 from "../../../assets/images/buy 5.jpg";
+import image9 from "../../../assets/images/buy 7.jpg";
+
+const products = [
+  { id: 1, name: "Carrot Gel", price: "₵50", image: image1, description: "Nourishes and brightens your skin naturally." },
+  { id: 2, name: "Black Soap", price: "₵30", image: image2, description: "Deep cleansing for smooth and glowing skin." },
+  { id: 3, name: "Goat Milk Gel", price: "₵60", image: image3, description: "Rich in vitamins, keeps skin hydrated and fresh." },
+  { id: 4, name: "Cocoa Black Soap", price: "₵60", image: image4, description: "Enriched with cocoa for deep cleansing and a natural glow." },
+  { id: 5, name: "Scented Carrot Gel with Lavender", price: "₵60", image: image5, description: "Calming lavender and carrot extract nourish and refresh your skin." },
+  { id: 6, name: "Scented Carrot Black Soap", price: "₵60", image: image6, description: "A luxurious blend of carrot and natural oils for soft, radiant skin." },
+  { id: 7, name: "Alata Shower Gel", price: "₵60", image: image7, description: "A rich, foaming cleanser that hydrates and revitalizes your skin." },
+  { id: 8, name: "Liquid Soap", price: "₵60", image: image8, description: "A gentle, everyday cleanser that leaves skin feeling fresh and smooth." },
+  { id: 9, name: "Liquid Soap", price: "₵60", image: image9, description: "Infused with botanical extracts for a refreshing and balanced cleanse." }
+
+];
 
 const Showcase = () => {
+  const [showAll, setShowAll] = useState(false);
+  const [isHome, setIsHome] = useState(false); 
+  useEffect(() => {
+    setIsHome(window.location.pathname === "/");
+  }, []);
+
+  const displayedProducts = showAll ? products : products.slice(0, 3);
+
   return (
-    <div>
-      <Navbar/>
-    <div className="p-6 flex justify-center items-center align-middle h-[100vh] ">
-      <h4 className="text-4xl font-bold">Product / Service Showcase</h4>
-    </div>
-    </div>
+    <section className={`py-20 px-4 md:px-8 bg-lime-50 ${!isHome ? "mt-16 md:mt-20" : ""}`}> 
+      <Navbar />
+      <div className="container mx-auto px-4">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-bold text-center mb-8 text-green-600"
+        >
+          What Do You Need?
+        </motion.h2>
+        <motion.div 
+          initial="hidden" 
+          whileInView="visible" 
+          viewport={{ once: true }} 
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+        >
+          {displayedProducts.map((product) => (
+            <motion.div 
+              key={product.id} 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="bg-white p-4 rounded-lg shadow-md"
+            >
+              <div className="w-full h-56 flex justify-center items-center bg-lime-50 rounded-md">
+                <img src={product.image} alt={product.name} className="w-full h-full object-contain rounded-md" />
+              </div>
+              <h3 className="text-xl font-semibold mt-4">{product.name}</h3>
+              <p className="text-gray-600">{product.description}</p>
+              <p className="text-lg font-bold text-green-600">{product.price}</p>
+              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700">
+                Add to cart
+              </button>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* View More Button */}
+        <div className="text-center mt-6">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setShowAll(!showAll)}
+            className="bg-green-700 text-white py-2 px-6 rounded hover:bg-green-800 transition"
+          >
+            {showAll ? "View Less" : "View More"}
+          </motion.button>
+        </div>
+      </div>
+    </section>
   );
 };
 

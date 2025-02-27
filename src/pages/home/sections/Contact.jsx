@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react"; 
 import { motion } from "framer-motion";
 import Navbar from "../../../components/Navbar";
 
@@ -17,10 +17,17 @@ const itemVariants = {
 };
 
 const Contact = () => {
+  const [isHome, setIsHome] = useState(false);
+
+  
+  useEffect(() => {
+    setIsHome(window.location.pathname === "/");
+  }, []);
+
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-[100vh] bg-lime-50 mt-20">
+      <div className={`flex flex-col justify-center items-center h-[100vh] bg-lime-50 ${!isHome ? "mt-16 md:mt-20" : ""}`}> 
         <motion.form 
           action="https://formspree.io/f/xldeezyn" 
           method="POST" 
