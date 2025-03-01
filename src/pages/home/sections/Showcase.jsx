@@ -7,20 +7,16 @@ import image3 from "../../../assets/images/p3.jpeg";
 import image4 from "../../../assets/images/buy 9.jpg";
 import image5 from "../../../assets/images/buy 3.jpg";
 import image6 from "../../../assets/images/buy 1.jpg";
-import image7 from "../../../assets/images/buy 6.jpg";
-import image8 from "../../../assets/images/buy 5.jpg";
-import image9 from "../../../assets/images/buy 7.jpg";
+
 
 const products = [
-  { id: 1, name: "Carrot Gel", price: "₵50", image: image1, description: "Nourishes and brightens your skin naturally." },
-  { id: 2, name: "Black Soap", price: "₵30", image: image2, description: "Deep cleansing for smooth and glowing skin." },
-  { id: 3, name: "Goat Milk Gel", price: "₵60", image: image3, description: "Rich in vitamins, keeps skin hydrated and fresh." },
-  { id: 4, name: "Cocoa Black Soap", price: "₵60", image: image4, description: "Enriched with cocoa for deep cleansing and a natural glow." },
-  { id: 5, name: "Scented Carrot Gel with Lavender", price: "₵60", image: image5, description: "Calming lavender and carrot extract nourish and refresh your skin." },
+  { id: 1, name: "Carrot Gel", price: "₵40", image: image1, description: "Nourishes and brightens your skin naturally.",paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-carrot-shower-gel-terngc" },
+  { id: 2, name: "Black Soap", price: "₵40", image: image2, description: "Deep cleansing for smooth and glowing skin.," , paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys "},
+  { id: 3, name: "Goat Milk Gel", price: "₵40", image: image3, description: "Rich in vitamins, keeps skin hydrated and fresh.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-black-soap-shower-gel-bmnmub " },
+  { id: 4, name: "Cocoa Black Soap", price: "₵45", image: image4, description: "Enriched with cocoa for deep cleansing and a natural glow.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-cocoa-black"},
+  { id: 5, name: "Scented Carrot Gel with Lavender", price: "₵60", image: image5, description: "Calming lavender and carrot extract nourish and refresh your skin."},
   { id: 6, name: "Scented Carrot Black Soap", price: "₵60", image: image6, description: "A luxurious blend of carrot and natural oils for soft, radiant skin." },
-  { id: 7, name: "Alata Shower Gel", price: "₵60", image: image7, description: "A rich, foaming cleanser that hydrates and revitalizes your skin." },
-  { id: 8, name: "Liquid Soap", price: "₵60", image: image8, description: "A powerful yet gentle liquid soap designed to effectively remove dirt, grease, and stains while being safe for hands and surfaces." },
-  { id: 9, name: "Scented floor cleaner", price: "₵60", image: image9, description: "Enriched with antibacterial properties, it ensures a deep clean while leaving a fresh, long-lasting scent. Perfect for household, office, and industrial use." }
+  
 ];
 
 const Showcase = () => {
@@ -64,12 +60,13 @@ const Showcase = () => {
               <h3 className="text-lg sm:text-xl font-semibold mt-4">{product.name}</h3>
               <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>
               <p className="text-lg font-bold text-green-600">{product.price}</p>
-              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full sm:w-auto">
-                Add to cart
+              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full sm:w-auto"  onClick={() => window.open(product.paystackLink, "_blank")}>
+                Buy Now
               </button>
             </motion.div>
           ))}
         </motion.div>
+
 
         {/* View More Button */}
         <div className="text-center mt-6">
