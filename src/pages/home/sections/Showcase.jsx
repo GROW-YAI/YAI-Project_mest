@@ -5,8 +5,7 @@ import image1 from "../../../assets/images/p1.jpeg";
 import image2 from "../../../assets/images/p2.jpeg";
 import image3 from "../../../assets/images/p3.jpeg";
 import image4 from "../../../assets/images/buy 9.jpg";
-import image5 from "../../../assets/images/buy 3.jpg";
-import image6 from "../../../assets/images/buy 1.jpg";
+
 
 
 const products = [
@@ -14,8 +13,7 @@ const products = [
   { id: 2, name: "Black Soap", price: "₵40", image: image2, description: "Deep cleansing for smooth and glowing skin.," , paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys "},
   { id: 3, name: "Goat Milk Gel", price: "₵40", image: image3, description: "Rich in vitamins, keeps skin hydrated and fresh.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-black-soap-shower-gel-bmnmub " },
   { id: 4, name: "Cocoa Black Soap", price: "₵45", image: image4, description: "Enriched with cocoa for deep cleansing and a natural glow.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-cocoa-black"},
-  { id: 5, name: "Scented Carrot Gel with Lavender", price: "₵60", image: image5, description: "Calming lavender and carrot extract nourish and refresh your skin."},
-  { id: 6, name: "Scented Carrot Black Soap", price: "₵60", image: image6, description: "A luxurious blend of carrot and natural oils for soft, radiant skin." },
+  
   
 ];
 

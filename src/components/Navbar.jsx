@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Menu, X, ShoppingBag, Instagram, Facebook } from 'lucide-react';
+import { Menu, EllipsisVertical, X, ShoppingBag, Instagram, Facebook } from 'lucide-react';
 import logo from "../assets/images/logo.jpg";
 import social from "../assets/images/social.jpg"
 import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,22 +78,13 @@ const Navbar = () => {
             </nav>
 
             <div className="flex items-center">
-              <a
-                href="/cart"
-                className="p-1.5 hover:bg-gray-100 rounded-lg transition-colors relative"
-                aria-label="Shopping cart"
-              >
-                <ShoppingBag className="w-5 h-5" />
-                <span className="absolute -top-1 -right-1 bg-[#019A28] text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-                  0
-                </span>
-              </a>
+
               <button
                 onClick={() => setIsSideModalOpen(true)}
                 className="p-1.5 hover:bg-gray-100 rounded-lg transition-colors"
                 aria-label="Open menu"
               >
-                <Menu className="w-5 h-5" />
+                <EllipsisVertical className="w-5 h-8" />
               </button>
             </div>
           </div>

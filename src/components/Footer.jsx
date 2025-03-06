@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-white text-black py-8" id="contact">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left px-4">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left px-4">
         {/* Logo and description */}
         <div>
           <div className="flex justify-center md:justify-start mb-4">
@@ -36,15 +36,7 @@ const Footer = () => {
         </div>
 
         {/* Resources */}
-        <div>
-          <h6 className="font-semibold mb-4">RESOURCES</h6>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:underline">Help Center</a></li>
-            <li><a href="#" className="hover:underline">FAQs</a></li>
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" className="hover:underline">Terms of Service</a></li>
-          </ul>
-        </div>
+        
 
         {/* Contact */}
         <div>
