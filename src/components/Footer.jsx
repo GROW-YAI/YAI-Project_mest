@@ -4,7 +4,7 @@ import { FaInstagramSquare, FaFacebook, FaTiktok } from "react-icons/fa";
 import { MdOutlineCopyright } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { TfiEmail } from "react-icons/tfi";
-import pic from "../assets/images/Jnelp.png";
+import pic from "../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

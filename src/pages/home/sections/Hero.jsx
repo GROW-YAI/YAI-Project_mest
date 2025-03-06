@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import hero from "../../../assets/images/hero3.jpg"
-import hero2 from "../../../assets/images/hero 1.jpeg"
-import hero3 from "../../../assets/images/hero 11.png"
+import hero from "../../../assets/images/hero3.webp"
+import hero2 from "../../../assets/images/hero 1.webp"
+import hero3 from "../../../assets/images/hero 10.webp"
 import { Link } from 'react-router-dom';
 
 const slides = [

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteLeft } from "react-icons/fa";
-import pics from "../../../assets/images/testi 4.jpg";
-import picss from "../../../assets/images/testi 2.jpg";
-import picsss from "../../../assets/images/testi 3.jpg";
+import pics from "../../../assets/images/testi 4.webp";
+import picss from "../../../assets/images/testi 2.webp";
+import picsss from "../../../assets/images/testi 3.webp";
 import Navbar from "../../../components/Navbar";
 
 const testimonials = [

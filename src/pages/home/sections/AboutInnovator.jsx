@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Award, Heart, ArrowRight } from 'lucide-react';
-import about from "../../../assets/images/about.jpg";
+import about from "../../../assets/images/about.webp";
 import Navbar from '../../../components/Navbar';
 
 

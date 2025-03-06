@@ -2,12 +2,12 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Carrot, Droplets, Milk } from 'lucide-react'
-import carrot from "../../../assets/images/carrot.jpeg"
-import blacksoap from "../../../assets/images/blacksoap.jpeg"
-import goatmilk from "../../../assets/images/goatmilk.jpeg"
-import product1 from "../../../assets/images/p1.jpeg"
-import product2 from "../../../assets/images/p2.jpeg"
-import product3 from "../../../assets/images/p3.jpeg"
+import carrot from "../../../assets/images/carrot.webp"
+import blacksoap from "../../../assets/images/blacksoap.webp"
+import goatmilk from "../../../assets/images/goatmilk.webp"
+import product1 from "../../../assets/images/p1.webp"
+import product2 from "../../../assets/images/p2.webp"
+import product3 from "../../../assets/images/p3.webp"
 import Navbar from '../../../components/Navbar'
 const products = [
   {

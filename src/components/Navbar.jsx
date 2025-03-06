@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, EllipsisVertical, X, ShoppingBag, Instagram, Facebook } from 'lucide-react';
-import logo from "../assets/images/logo.jpg";
-import social from "../assets/images/social.jpg"
+import logo from "../assets/images/logo.webp";
+import social from "../assets/images/social.webp"
 import { Link } from 'react-router-dom';
 
 
