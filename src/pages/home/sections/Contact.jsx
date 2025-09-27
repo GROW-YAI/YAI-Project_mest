@@ -27,7 +27,8 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className={`flex flex-col justify-center items-center min-h-screen bg-lime-50 px-4 ${!isHome ? "mt-16 md:mt-20" : ""}`}> 
+      <div className={`flex flex-col justify-center items-center bg-lime-50 px-4 py-[150px] ${!isHome ? "mt-16 md:mt-20" : ""}`}>
+      {/* <div className={`flex flex-col justify-center items-center min-h-screen bg-lime-50 px-4 ${!isHome ? "mt-16 md:mt-20" : ""}`}>  */}
         <motion.form 
           action="https://formspree.io/f/movjgvgr" 
           method="POST" 

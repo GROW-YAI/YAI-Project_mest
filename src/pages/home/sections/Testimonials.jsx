@@ -39,7 +39,7 @@ const Testimonials = () => {
         variants={containerVariants}
         className={`relative bg-green-600 text-white py-16 px-6 md:px-20 pt-24 h-auto ${!isHome ? "mt-16 md:mt-20" : ""}`} 
       >
-        <motion.div variants={itemVariants} className="absolute top-14 left-6 bg-green-400 p-4 rounded-full">
+        <motion.div variants={itemVariants} className="absolute top-10 left-6 bg-green-400 p-4 rounded-full">
           <FaQuoteLeft className="text-2xl" />
         </motion.div>
 
@@ -52,7 +52,9 @@ const Testimonials = () => {
             </p>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> */}
+          <motion.div variants={containerVariants} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             {testimonials.map((testimonial) => (
               <motion.div 
                 key={testimonial.id} 

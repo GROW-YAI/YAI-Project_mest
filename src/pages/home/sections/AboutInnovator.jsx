@@ -42,7 +42,9 @@ function AboutInnovator() {
           >
             {/* Left Column - Image */}
             <motion.div variants={itemVariants} className="relative">
-              <div className="relative w-[320px] h-[320px] md:w-[480px] md:h-[480px] mx-auto">
+              {/* <div className="relative w-[320px] h-[320px] md:w-[480px] md:h-[480px] mx-auto"> */}
+              <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[480px] md:h-[480px] mx-auto">
+
                 <div className="absolute inset-0 rounded-full bg-[#FFA726]" />
                 <img
                   src={about}
