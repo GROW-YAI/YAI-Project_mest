@@ -12,27 +12,30 @@ import Navbar from '../../../components/Navbar'
 const products = [
   {
     id: 1,
-    name: "Carrot gel",
+    name: "Carrot Shower Gel",
     icon: Carrot,
-    description: "This is essentially packed with Coconut oil, Carrots, sheabutter and other essential oils. Rich in vitamin A and carotenoids, which helps give the skin a natural radiant complexion, sweet scented.",
+    // description: "This is essentially packed with Coconut oil, Carrots, sheabutter and other essential oils. Rich in vitamin A and carotenoids, which helps give the skin a natural radiant complexion, sweet scented.",
+    description: "Rich in Vitamin A and Carotenoids, this luxurious blend of coconut oil, carrots, shea butter, and essential oils promotes a radiant complexion. Elevate your shower routine with our indulgent formula for a natural glow", 
     bgImage: carrot,
     overlayColor: "rgba(225, 137, 40, 0.8)",
     image: product1 
   },
   {
     id: 2,
-    name: "Black Soap",
+    name: "Cocoa Black Soap",
     icon: Droplets,
-    description: "It is packed with natural and essential nutrients: black soap, vegetable glycerine and honey which improves skin tone, reduces inflammation, and deeply cleanses the skin.",
+    // description: "It is packed with natural and essential nutrients: black soap, vegetable glycerine and honey which improves skin tone, reduces inflammation, and deeply cleanses the skin.",
+    description: "Our all-natural black soap with Honey, Cocoa, and Shea Butter. Unlike regular black soap, our formula leaves your skin feeling super moisturized and refreshed. This is surely for a bath you'll want to repeat.",
     bgImage: blacksoap,
     overlayColor: "rgba(0, 0, 0, 0.7)",
     image: product2
   },
   {
     id: 3,
-    name: "Goat milk gel",
+    name: "Goat Milk Gel",
     icon: Milk,
-    description: "This is essentially packed with Shea butter, honey with goat milk. Which can help the skin shed its dead cells, making one's complexion brighter and more supple in the process. It's a natural skin lightener",
+    // description: "This is essentially packed with Shea butter, honey with goat milk. Which can help the skin shed its dead cells, making one's complexion brighter and more supple in the process. It's a natural skin lightener",
+    description: "Enriched with the nourishing goodness of goat shea butter, honey, and goat milk. This unique blend helps to gently exfoliate the skin, promoting a brighter and more supple complexion effect. ",
     bgImage: goatmilk,
     overlayColor: "rgba(80, 127, 31, 0.8)",
     image: product3
