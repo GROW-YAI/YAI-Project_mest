@@ -9,10 +9,11 @@ import image4 from "../../../assets/images/buy 9.webp";
 
 
 const products = [
-  { id: 1, name: "Carrot Gel", price: "₵40", image: image1, description: "Nourishes and brightens your skin naturally.",paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-carrot-shower-gel-terngc" },
-  { id: 2, name: "Black Soap", price: "₵40", image: image2, description: "Deep cleansing for smooth and glowing skin.," , paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys "},
+  { id: 1, name: "Carrot Shower Gel", price: "₵40", image: image1, description: "Nourishes and brightens your skin naturally.",paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-carrot-shower-gel-terngc" },
+  { id: 2, name: "Black Soap", price: "₵40", image: image2, description: "Deep cleansing for smooth and glowing skin." , paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys "},
   { id: 3, name: "Goat Milk Gel", price: "₵40", image: image3, description: "Rich in vitamins, keeps skin hydrated and fresh.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-black-soap-shower-gel-bmnmub " },
   { id: 4, name: "Cocoa Black Soap", price: "₵45", image: image4, description: "Enriched with cocoa for deep cleansing and a natural glow.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-cocoa-black"},
+  { id: 5, name: "Honey Black Soap", price: "₵45", image: image4, description: "Infused with the goodness of pure honey to gently cleanse and moisturize, leaving your skin feeling soft, smooth, and radiant.", paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-cocoa-black"},
   
   
 ];
@@ -57,7 +58,7 @@ const Showcase = () => {
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mt-4">{product.name}</h3>
               <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>
-              <p className="text-lg font-bold text-green-600">{product.price}</p>
+              <p className="text-lg font-bold text-green-600 mt-2">{product.price}</p>
               <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full sm:w-auto"  onClick={() => window.open(product.paystackLink, "_blank")}>
                 Buy Now
               </button>
