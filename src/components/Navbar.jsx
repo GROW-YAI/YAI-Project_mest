@@ -60,10 +60,10 @@ const Navbar = () => {
                 HOME
               </Link>
               <Link to="/products" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                PRODUCTS
+                STORE
               </Link>
               <Link to="/services" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                SERVICES
+                OUR STORY
               </Link>
               <Link to="/aboutinnovator" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
                 ABOUT US

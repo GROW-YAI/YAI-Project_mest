@@ -91,7 +91,7 @@ const Hero = () => {
               {slides[currentSlide].description}
             </h1>
 
-            <Link to="/services">
+            <Link to="/products">
               <button className="bg-[#019A28] text-white px-6 py-3 lg:px-8 lg:py-3 rounded-none hover:bg-navy-800 transition-colors">
                 {slides[currentSlide].buttonText}
               </button>
