@@ -5,6 +5,15 @@ import social from "../assets/images/social.webp"
 import { Link } from 'react-router-dom';
 
 
+
+const handleNavClick = () => {
+  // Scroll to top when any nav link is clicked
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSideModalOpen, setIsSideModalOpen] = useState(false);
@@ -56,23 +65,26 @@ const Navbar = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6 text-sm">
-              <Link to="/" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+              <Link to="/" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
                 HOME
               </Link>
-              <Link to="/products" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                STORE
-              </Link>
-              <Link to="/services" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                OUR STORY
-              </Link>
-              <Link to="/aboutinnovator" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+              <Link to="/aboutinnovator" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
                 ABOUT US
               </Link>
-              <Link to="/testimonials" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
+              <Link to="/impact" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
+                IMPACT
+              </Link>
+              <Link to="/products" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
+                OUR STORE
+              </Link>
+              <Link to="/testimonials" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
                 TESTIMONIALS
               </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium">
-                CONTACT
+              <Link to="/partner-with-us" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
+                JOIN US
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium"  onClick={handleNavClick}>
+                CONTACT US
               </Link>
               
             </nav>
@@ -93,22 +105,25 @@ const Navbar = () => {
           {isMenuOpen && (
             <div className="md:hidden mt-2 py-2 border-t border-gray-100">
               <nav className="flex flex-col space-y-1">
-                <Link to="/" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                <Link to="/" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
                   HOME
                 </Link>
-                <Link to="/aboutinnovator" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                <Link to="/aboutinnovator" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
                   ABOUT US
                 </Link>
-                <Link to="/services" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
-                  SERVICES
+                <Link to="/impact" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
+                  IMPACT
                 </Link>
-                <Link to="/products" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
-                  PRODUCTS
+                <Link to="/products" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
+                  OUR STORE
                 </Link>
-                <Link to="/contact" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
-                  CONTACT
+                <Link to="/partner-with-us" className="text-gray-700 hover:text-[#019A28] hover:underline transition-colors font-medium" onClick={handleNavClick}>
+                JOIN US
                 </Link>
-                <Link to="/testimonials" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">
+                <Link to="/contact" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
+                  CONTACT US
+                </Link>
+                <Link to="/testimonials" className="px-2 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors" onClick={handleNavClick}>
                   TESTIMONIALS
                 </Link>
               </nav>
