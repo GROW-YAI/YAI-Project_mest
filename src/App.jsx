@@ -9,6 +9,7 @@ import AboutProducts from "./pages/home/sections/AboutProduct";
 import Showcase from "./pages/home/sections/Showcase";
 import Contact from "./pages/home/sections/Contact";
 import Testimonials from "./pages/home/sections/Testimonials";
+import JoinUs from "./pages/home/sections/partnerWithUs";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,12 +23,16 @@ function App() {
       element: <AboutInnovator/>
     },
     {
+      path: "/impact",
+      element: <Showcase/>
+    },
+    {
       path: "/products",
       element: <AboutProducts/>
     },
     {
-      path: "/services",
-      element: <Showcase/>
+      path: "/partner-with-us",
+      element: <JoinUs/>
     },
     {
       path: "/contact",
