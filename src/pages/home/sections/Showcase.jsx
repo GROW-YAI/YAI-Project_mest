@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Target, Star, TrendingUp, Handshake, Heart, MapPin, Globe } from 'lucide-react';
 import Navbar from '../../../components/Navbar';
-import p1 from "../../../assets/images/p1.jpeg";
-import p2 from "../../../assets/images/p2.jpeg";
-import p3 from "../../../assets/images/p3.jpeg";
-import buy9 from "../../../assets/images/buy 9.jpg";
+import impact1 from "../../../assets/images/impact1.jpg";
+import impact2 from "../../../assets/images/impact2.jpeg";
+import impact3 from "../../../assets/images/impact3.jpeg";
+import impact4 from "../../../assets/images/impact4.jpg";
+import impact5 from "../../../assets/images/impact5.jpg";
+import impact6 from "../../../assets/images/impact6.jpeg";
+import impact7 from "../../../assets/images/impact7.jpg";
+import impact8 from "../../../assets/images/impact8.jpeg";
 
 const awards = [
   { 
@@ -49,24 +53,46 @@ const awards = [
 const galleryItems = [
   {
     category: "Youth Empowerment",
-    image: p1,
+    image: impact1,
     description: "Training future leaders"
   },
   {
     category: "Community Projects",
-    image: p2, 
+    image: impact2, 
     description: "Northern Ghana initiatives"
   },
   {
     category: "Skill Training",
-    image: p3,
+    image: impact3,
     description: "Practical workshops"
   },
   {
     category: "Expos & Showcases",
-    image: buy9,
+    image: impact4,
     description: "Sharing our journey"
+  },
+  // New placeholder items - 8 beautiful placeholders
+  {
+    category: "Award Ceremonies",
+    image: impact5,
+    description: "Celebrating our achievements",
+  },
+  {
+    category: "Quality Production",
+    image: impact6,
+    description: "Ensuring product excellence",
+  },
+  {
+    category: "Product Application",
+    image: impact7,
+    description: "Right product usage",
+  },
+  {
+    category: "Media Features",
+    image: impact8,
+    description: "Press and media coverage",
   }
+
 ];
 
 const containerVariants = {
