@@ -2,13 +2,14 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Carrot, Droplets, Milk } from 'lucide-react'
-import carrot from "../../../assets/images/carrot.webp"
+import carrot from "../../../assets/images/carrot.jpeg"
 import blacksoap from "../../../assets/images/blacksoap.webp"
 import goatmilk from "../../../assets/images/goatmilk.webp"
 import product1 from "../../../assets/images/p1.webp"
 import product2 from "../../../assets/images/p2.webp"
 import product3 from "../../../assets/images/p3.webp"
 import product4 from "../../../assets/images/buy 9.webp"
+import black1 from "../../../assets/images/black1.jpg"
 import Navbar from '../../../components/Navbar'
 
 const productDetails = [
@@ -84,7 +85,7 @@ const showcaseProducts = [
     id: 5, 
     name: "Honey Black Soap", 
     price: "₵45", 
-    image: product4, 
+    image: black1, 
     description: "Infused with the goodness of pure honey to gently cleanse and moisturize, leaving your skin feeling soft, smooth, and radiant.", 
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-cocoa-black"
   }
