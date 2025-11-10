@@ -37,9 +37,9 @@ const Testimonials = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariants}
-        className={`relative bg-green-600 text-white py-16 px-6 md:px-20 pt-24 h-auto ${!isHome ? "mt-16 md:mt-20" : ""}`} 
+        className={`relative bg-green-800 text-white py-16 px-6 md:px-20 pt-24 h-auto ${!isHome ? "mt-16 md:mt-20" : ""}`} 
       >
-        <motion.div variants={itemVariants} className="absolute top-10 left-6 bg-green-400 p-4 rounded-full">
+        <motion.div variants={itemVariants} className="absolute top-10 left-6 bg-green-600 p-4 rounded-full">
           <FaQuoteLeft className="text-2xl" />
         </motion.div>
 

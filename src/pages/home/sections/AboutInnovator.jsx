@@ -62,8 +62,8 @@ function AboutInnovator() {
     <div>
       <Navbar />
       
-      {/* Who We Are Section bg-green-800*/}
-      <section className={`py-20 px-4 md:px-8 bg-[#019A28] ${!isHome ? "mt-16 md:mt-20" : ""}`}>
+      {/* Who We Are Section bg-green-800 bg-[#019A28] */}
+      <section className={`py-20 px-4 md:px-8 bg-green-800 ${!isHome ? "mt-16 md:mt-20" : ""}`}>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial="hidden"
@@ -189,13 +189,13 @@ function AboutInnovator() {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
             >
-              Let's <span className="text-[#019A28]">P-I-N</span> It!
+              Let's <span className="text-green-800">P-I-N</span> It!
             </motion.h2>
             <motion.p 
               variants={itemVariants}
               className="text-xl text-gray-600 max-w-3xl mx-auto"
             >
-              Our Core Values are <span className="font-semibold text-[#019A28]">PEOPLE, INNOVATIONS AND NETWORKS</span>, Just PIN IT
+              Our Core Values are <span className="font-semibold text-green-800 ">PEOPLE, INNOVATIONS AND NETWORKS</span>, Just PIN IT
             </motion.p>
           </motion.div>
 
@@ -213,7 +213,7 @@ function AboutInnovator() {
               >
                 <div className="flex flex-col items-center text-center">
                   {/* Icon Container */}
-                  <div className="w-20 h-20 rounded-full bg-[#019A28] flex items-center justify-center mb-6">
+                  <div className="w-20 h-20 rounded-full bg-green-800 flex items-center justify-center mb-6">
                     <value.icon className="w-10 h-10 text-white" />
                   </div>
                   
