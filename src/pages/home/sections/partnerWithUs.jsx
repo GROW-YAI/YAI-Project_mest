@@ -130,7 +130,7 @@ const JoinUs = () => {
       key="wholesale-form"
       action="https://formspree.io/f/movjgvgr" 
       method="POST" 
-      className="flex flex-col bg-green-600 gap-6 p-8 w-full rounded-2xl shadow-lg"
+      className="flex flex-col bg-green-800 gap-6 p-8 w-full rounded-2xl shadow-lg"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

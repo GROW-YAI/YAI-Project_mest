@@ -136,7 +136,7 @@ function AboutProducts() {
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-bold text-green-600 text-center mb-16"
+          className="text-4xl md:text-5xl font-bold text-green-800 text-center mb-16"
         >
           Our Current Products
         </motion.h2>
@@ -203,7 +203,7 @@ function AboutProducts() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-green-600"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 text-green-800"
         >
           What Do You Need?
         </motion.h2>
@@ -234,8 +234,8 @@ function AboutProducts() {
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mt-4">{product.name}</h3>
               <p className="text-gray-600 text-sm sm:text-base">{product.description}</p>
-              <p className="text-lg font-bold text-green-600 mt-2">{product.price}</p>
-              <button className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 w-full sm:w-auto"  onClick={() => window.open(product.paystackLink, "_blank")}>
+              <p className="text-lg font-bold text-green-800 mt-2">{product.price}</p>
+              <button className="mt-4 bg-green-800 text-white py-2 px-4 rounded hover:bg-green-600 w-full sm:w-auto"  onClick={() => window.open(product.paystackLink, "_blank")}>
                 Buy Now
               </button>
             </motion.div>
@@ -248,7 +248,7 @@ function AboutProducts() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setShowAll(!showAll)}
-            className="bg-green-700 text-white py-2 px-6 rounded hover:bg-green-800 transition w-full sm:w-auto"
+            className="bg-green-800 text-white py-2 px-6 rounded hover:bg-green-600 transition w-full sm:w-auto"
           >
             {showAll ? "View Less" : "View More"}
           </motion.button>

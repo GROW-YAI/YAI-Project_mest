@@ -22,7 +22,7 @@ const Navbar = () => {
     
     <div className="w-full fixed top-0 left-0 z-50">
       {/* Top banner */}
-      <div className="bg-[#019A28] text-white px-4 py-1.5 text-xs sm:text-sm">
+      <div className="bg-green-800 text-white px-4 py-1.5 text-xs sm:text-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <h1 className="hidden sm:block font-serif font-bold hover:opacity-80 transition-opacity">
             Jnelp

@@ -411,7 +411,7 @@ const Contact = () => {
               variants={containerVariants}
             >
               <motion.div 
-                className="bg-gradient-to-br from-green-600 to-green-700 rounded-2xl p-8 shadow-xl"
+                className="bg-gradient-to-br from-green-700 to-green-800 rounded-2xl p-8 shadow-xl"
                 variants={containerVariants}
               >
                 <motion.h2 variants={itemVariants} className="text-3xl text-white font-bold mb-2 text-center">
