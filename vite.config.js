@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   // assetsInclude: ['**/*.CR2'],
-  assetsInclude: ['**/*.CR2', '**/*.NEF', '**/*.ARW', '**/*.DNG'],
+  assetsInclude: ['**/*.CR2', '**/*.NEF', '**/*.ARW', '**/*.DNG', '**/*.JPG', '**/*.JPEG'],
 
 
 });
