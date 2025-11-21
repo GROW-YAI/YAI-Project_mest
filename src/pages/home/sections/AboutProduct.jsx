@@ -5,10 +5,15 @@ import { Carrot, Droplets, Milk } from 'lucide-react'
 import carrot from "../../../assets/images/carrot.jpeg"
 import blacksoap from "../../../assets/images/blacksoap.webp"
 import goatmilk from "../../../assets/images/goatmilk.webp"
+import carrotA from "../../../assets/images/carrotA.JPG"
+import goat from "../../../assets/images/goat.JPG"
+import buy9 from "../../../assets/images/buy 9.webp"
 import product1 from "../../../assets/images/p1.webp"
 import product2 from "../../../assets/images/p2.webp"
 import product3 from "../../../assets/images/p3.webp"
 import product4 from "../../../assets/images/buy 9.webp"
+import blackHoney from "../../../assets/images/blackHoney.JPG"
+import carrot2 from "../../../assets/images/carrot2.JPG"
 import black1 from "../../../assets/images/black1.jpg"
 import Navbar from '../../../components/Navbar'
 
@@ -20,7 +25,8 @@ const productDetails = [
     description: "Rich in Vitamin A and Carotenoids, this luxurious blend of coconut oil, carrots, shea butter, and essential oils promotes a radiant complexion. Elevate your shower routine with our indulgent formula for a natural glow", 
     bgImage: carrot,
     overlayColor: "rgba(225, 137, 40, 0.8)",
-    image: product1,
+    // image: product1,
+    image: carrotA,
     price: "₵40",
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-carrot-shower-gel-terngc"
   },
@@ -31,7 +37,8 @@ const productDetails = [
     description: "Our all-natural black soap with Honey, Cocoa, and Shea Butter. Unlike regular black soap, our formula leaves your skin feeling super moisturized and refreshed. This is surely for a bath you'll want to repeat.",
     bgImage: blacksoap,
     overlayColor: "rgba(0, 0, 0, 0.7)",
-    image: product2,
+    // image: product2,
+    image: buy9,
     price: "₵40",
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-black-soap-shower-gel-bmnmub"
   },
@@ -42,7 +49,8 @@ const productDetails = [
     description: "Enriched with the nourishing goodness of goat shea butter, honey, and goat milk. This unique blend helps to gently exfoliate the skin, promoting a brighter and more supple complexion effect. ",
     bgImage: goatmilk,
     overlayColor: "rgba(80, 127, 31, 0.8)",
-    image: product3,
+    // image: product3,
+    image: goat,
     price: "₵40",
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys"
   }
@@ -53,7 +61,8 @@ const showcaseProducts = [
     id: 1, 
     name: "Carrot Shower Gel", 
     price: "₵40", 
-    image: product1, 
+    // image: product1, 
+    image: carrot2, 
     description: "Nourishes and brightens your skin naturally.",
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-carrot-shower-gel-terngc" 
   },
@@ -61,7 +70,8 @@ const showcaseProducts = [
     id: 2, 
     name: "Black Soap", 
     price: "₵40", 
-    image: product2, 
+    // image: product2, 
+    image: blackHoney, 
     description: "Deep cleansing for smooth and glowing skin.",
     paystackLink: "https://paystack.shop/jnelp-cosmetic_solutions?product=jnelp-goat-milk-shower-gel-qcuoys"
   },
