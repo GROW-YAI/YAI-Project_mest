@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Star, Award, Heart, ArrowRight, Users, Lightbulb, Network, MessageCircle, Handshake } from 'lucide-react';
 import about from "../../../assets/images/about.webp";
 import aboutUs1 from "../../../assets/images/aboutUs1.jpg";
+import aboutUs2 from "../../../assets/images/aboutUs2.jpeg";
 import Navbar from '../../../components/Navbar';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -29,6 +30,8 @@ const pinValues = [
     description: "For too long, skincare shelves across Africa have been dominated by products made elsewhere, leaving African-made cosmetics with less than 3% of the space. At JNELP, we are changing that story — one shop, one home, one community, and one country at a time. We are empowering Made in Africa products to rise on shelves across the continent and beyond."
   }
 ];
+
+//might change circle to square
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -77,7 +80,8 @@ function AboutInnovator() {
               <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[480px] md:h-[480px] mx-auto">
                 <div className="absolute inset-0 rounded-full bg-[#FFA726]" />
                 <img
-                  src={aboutUs1}
+                  // src={aboutUs1}
+                  src={aboutUs2}
                   alt="Portia Sackey"
                   className="absolute inset-0 w-full h-full object-cover rounded-full"
                 />
